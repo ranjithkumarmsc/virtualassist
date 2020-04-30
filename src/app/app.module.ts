@@ -10,7 +10,14 @@ import { DeanviewComponent } from './deanview/deanview.component';
 import { PrincipalviewComponent } from './principalview/principalview.component';
 import { PaperdetailComponent } from './paperdetail/paperdetail.component';
 import { SemesterdetailComponent } from './semesterdetail/semesterdetail.component';
-
+import { NavbarComponent } from './navbar/navbar.component';
+import { Routes, RouterModule } from '@angular/router';
+export const routerConfig: Routes = [
+  { path: 'professor',component: ProfessorviewComponent    },
+  { path: 'student', component: StudentviewComponent    },
+  { path: 'principal',component: PrincipalviewComponent},
+  { path: 'dean',component: DeanviewComponent},
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,9 +27,10 @@ import { SemesterdetailComponent } from './semesterdetail/semesterdetail.compone
     DeanviewComponent,
     PrincipalviewComponent,
     PaperdetailComponent,
-    SemesterdetailComponent
+    SemesterdetailComponent,
+    NavbarComponent
   ],
-  imports: [
+  imports: [ RouterModule.forRoot(routerConfig),
     BrowserModule,
     AppRoutingModule
   ],
