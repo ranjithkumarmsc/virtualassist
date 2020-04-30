@@ -8,6 +8,8 @@ import { ProfessorviewComponent } from './professorview/professorview.component'
 import { StudentviewComponent } from './studentview/studentview.component';
 import { DeanviewComponent } from './deanview/deanview.component';
 import { PrincipalviewComponent } from './principalview/principalview.component';
+import { PaperdetailComponent } from './paperdetail/paperdetail.component';
+import { SemesterdetailComponent } from './semesterdetail/semesterdetail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { PrincipalviewComponent } from './principalview/principalview.component'
     ProfessorviewComponent,
     StudentviewComponent,
     DeanviewComponent,
-    PrincipalviewComponent
+    PrincipalviewComponent,
+    PaperdetailComponent,
+    SemesterdetailComponent
   ],
   imports: [
     BrowserModule,
