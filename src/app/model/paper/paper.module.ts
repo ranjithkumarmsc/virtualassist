@@ -10,6 +10,6 @@ import { Staff } from '../staff/staff.module';
     CommonModule
   ]
 })
-export class PaperModule {
+export class Paper {
   staff:Staff[];
  }

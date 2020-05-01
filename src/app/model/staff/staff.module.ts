@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Paper } from '../paper/paper.module';
 
 
 
@@ -9,4 +10,11 @@ import { CommonModule } from '@angular/common';
     CommonModule
   ]
 })
-export class Staff { }
+export class Staff { 
+  name:String;
+  qualification:String;
+  teachingStaff:boolean;
+  labStaff:boolean;
+  designation:String;
+  paperList:Paper;
+}

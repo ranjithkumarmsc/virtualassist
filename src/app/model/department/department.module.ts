@@ -12,7 +12,7 @@ import { Staff } from '../staff/staff.module';
   ]
 })
 export class Department {
-  dean:Dean;
-  departmentName:String;
-  staffList:Staff[];
+  public dean:Dean;
+  public departmentName:String;
+  public staffList:Staff[]=[];
  }
