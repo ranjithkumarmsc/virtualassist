@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { StaffModule } from '../staff/staff.module';
+import { Staff } from '../staff/staff.module';
 
 
 
@@ -11,5 +11,5 @@ import { StaffModule } from '../staff/staff.module';
   ]
 })
 export class PaperModule {
-  staff:StaffModule[];
+  staff:Staff[];
  }

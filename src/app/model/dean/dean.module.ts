@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { StudentModule } from '../student/student.module';
-import { StaffModule } from '../staff/staff.module';
+import { Student } from '../student/student.module';
+import { Staff} from '../staff/staff.module';
 
 
 
@@ -11,8 +11,8 @@ import { StaffModule } from '../staff/staff.module';
     CommonModule
   ]
 })
-export class DeanModule {
+export class Dean {
 
-   professor:StaffModule;
-   student:StudentModule[];
+   professor:Staff;
+   student:Student[];
  }
