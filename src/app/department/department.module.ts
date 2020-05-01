@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { StaffModule } from '../staff/staff.module';
+import { DeanModule } from '../model/dean/dean.module';
 
 
 
@@ -10,6 +10,6 @@ import { StaffModule } from '../staff/staff.module';
     CommonModule
   ]
 })
-export class PaperModule {
-  staff:StaffModule[];
+export class DepartmentModule {
+  dean:DeanModule;
  }
