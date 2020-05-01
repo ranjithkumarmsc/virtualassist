@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PaperModule } from '../paper/paper.module';
-import { DepartmentModule } from 'src/app/department/department.module';
+import { DepartmentModule } from 'src/app/model/department/department.module';
 
 
 
