@@ -11,10 +11,12 @@ import { Paper } from '../paper/paper.module';
   ]
 })
 export class Staff { 
+  staffId:number;
   name:String;
   qualification:String;
   teachingStaff:boolean;
   labStaff:boolean;
   designation:String;
+  branchOfStudy:String;
   paperList:Paper;
 }
