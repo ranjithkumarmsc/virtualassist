@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Department } from '../model/department/department.module';
 
 @Component({
   selector: 'app-deanview',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeanviewComponent implements OnInit {
 
+  @Input()
+  public department: Department;
   constructor() { }
 
   ngOnInit(): void {
+
+    
   }
 
 }
