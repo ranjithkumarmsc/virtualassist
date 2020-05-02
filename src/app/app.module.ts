@@ -12,6 +12,7 @@ import { PaperdetailComponent } from './paperdetail/paperdetail.component';
 import { SemesterdetailComponent } from './semesterdetail/semesterdetail.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Routes, RouterModule } from '@angular/router';
+import { DepartmentcomponentComponent } from './departmentcomponent/departmentcomponent.component';
 export const routerConfig: Routes = [
   { path: 'professor',component: ProfessorviewComponent    },
   { path: 'student', component: StudentviewComponent    },
@@ -28,7 +29,8 @@ export const routerConfig: Routes = [
     PrincipalviewComponent,
     PaperdetailComponent,
     SemesterdetailComponent,
-    NavbarComponent
+    NavbarComponent,
+    DepartmentcomponentComponent
   ],
   imports: [ RouterModule.forRoot(routerConfig),
     BrowserModule,
