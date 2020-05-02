@@ -15,5 +15,5 @@ export class Department {
   public dean:Dean;
   public departmentName:String;
   public staffList:Staff[]=[];
-public departmentCode:String;
+  public departmentCode:String;
 }

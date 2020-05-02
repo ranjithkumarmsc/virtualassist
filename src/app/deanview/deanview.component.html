@@ -1,6 +1,8 @@
 <p>deanview works!</p>
 
-<div id="accordion">
+<app-departmentcomponent></app-departmentcomponent>
+
+<div *ngIf="department!=undefined" id="accordion">
   <div class="card">
     <div class="card-header" id="{{department.departmentName}}">
       <h5 class="mb-0">
@@ -37,4 +39,3 @@
     </div>
   </div>
 </div>
-

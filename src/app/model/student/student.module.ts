@@ -12,6 +12,28 @@ import { Department } from 'src/app/model/department/department.module';
   ]
 })
 export class Student { 
+  name:String;
+  dateOfBirth:String;
+   age:number;
+   gender:String;
+   mobile:String;
+   email:String;
+   fathername:String;
+   mothername:String;
+   primaryemergencycontactphone:String;
+   primaryemergencycontactperson:String;
+   secondaryemergencycontactphone:String;
+   secondaryemergencycontactperson:String;
+   addressline1:String;
+   addressline2:String;
+   addressline3:String;
+   city:String;
+   district:String;
+   state:String;
+   pincode:number;
+
+  
+
  paper:Paper[]=[];
  department:Department;
 }
