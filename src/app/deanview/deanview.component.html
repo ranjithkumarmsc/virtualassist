@@ -1,68 +1,40 @@
 <p>deanview works!</p>
 
-
 <div id="accordion">
-    <div class="card">
-      <div class="card-header" id="headingOne">
-        <h5 class="mb-0">
-          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-           Mathematics Department
-          </button>
-        </h5>
-      </div>
-  
-      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-        <div class="card-body">
-
-            <div>
-                <table class="table">
-                    <thead class="thead-dark">
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
+  <div class="card">
+    <div class="card-header" id="{{department.departmentName}}">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" attr.data-target="#{{department.departmentCode}}" aria-expanded="true" attr.aria-controls="{{department.departmentCode}}">
+         {{department.departmentName}} Department
+        </button>
+        <a  class="mb-1" href="dean">Show {{department.departmentName}}  Department Section</a>
+      </h5>
+    </div>
+    <div id="s">
+      <div class="card-header" id="{{department.departmentCode}}" class="collapse show" attr.aria-labelledby="{{department.departmentName}}" data-parent="#accordion">
+      <div class="card-body">
+          <div>
+              <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">Employee Id</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Qualification</th>
+                      <th scope="col">Designation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr *ngFor="let staff of department.staffList">
+                      <th scope="row">{{staff.staffId}}</th>
+                      <td>{{staff.name}}</td>
+                      <td>{{staff.qualification}}</td>
+                      <td>{{staff.designation}}</td>
                       </tr>
-                    </thead>
-                    <tbody>
-                        <tr *ngFor="let staff of this.department.staffList">
-                        <th scope="row">{{staff.staffId}}</th>
-                        <td>{{staff.name}}</td>
-                        <td>{{staff.qualification}}</td>
-                        <td>{{staff.designation}}</td>
-                        </tr>
-                    </tbody>
-                  </table>      
-            </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingTwo">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Collapsible Group Item #2
-          </button>
-        </h5>
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingThree">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Collapsible Group Item #3
-          </button>
-        </h5>
-      </div>
-      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-        </div>
+                  </tbody>
+                </table>      
+          </div>
       </div>
     </div>
   </div>
+</div>
+

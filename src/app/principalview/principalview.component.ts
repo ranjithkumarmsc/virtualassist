@@ -112,7 +112,7 @@ export class PrincipalviewComponent implements OnInit {
       phystaff2.labStaff=false;
       phystaff2.branchOfStudy="Physics";
       phystaff2.staffId=100109;
-      physicsdept1.staffList.push(phystaff1);
+      physicsdept1.staffList.push(phystaff2);
 
 department.departmentCode="mm001";
 computerdept1.departmentCode="cs002";
